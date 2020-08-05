@@ -27,7 +27,7 @@ class createTables1596601296493 {
     await queryRunner.query(`CREATE TABLE "fornecedor" ("id" uuid NOT NULL DEFAULT uuid_generate_v4(),
           "nome" character varying(100) NOT NULL,
           "categoriaId" uuid,
-          CONSTRAINT "REL_0b349f6b8ca7f05eed39ffb956" UNIQUE ("categoriaId"),
+          CONSTRAINT "REL_0b349f6b8ca70f5eed39ffb956" UNIQUE ("categoriaId"),
           "createdAt" TIMESTAMP NOT NULL DEFAULT now(),
           "updatedAt" TIMESTAMP NOT NULL DEFAULT now(),
           CONSTRAINT "PK_23451caefbb11a5b2fa92s96828" PRIMARY KEY ("id"))`);

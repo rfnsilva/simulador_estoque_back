@@ -1,23 +1,18 @@
 {
   "type": "postgres",
-  "host": "localhost",
-  "port": 5432,
-  "username": "postgres",
-  "password": "postgres",
-  "database": "estoque",
+  "url": "postgres://qwihkgpisthldi:48819138e3a44eaef0744490c1db84981406dfb604c147272f49e7c24a0077cd@ec2-54-234-44-238.compute-1.amazonaws.com:5432/d4bshhk4h5pjnv",
   "ssl": {
      "rejectUnauthorized": false
   },
-  "synchronize": true,
   "logging": true,
   "entities": [
-     "src/entity/**/*.ts"
+     "dist/entity/**/*.ts"
   ],
   "migrations": [
-     "src/migration/**/*.ts"
+     "dist/migration/**/*.ts"
   ],
   "subscribers": [
-     "src/subscriber/**/*.ts"
+     "dist/subscriber/**/*.ts"
   ],
   "cli": {
      "entitiesDir": "src/entity",
